@@ -1,0 +1,123 @@
+.products_section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.products_section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #6F5D44;
+    font-weight: bold;
+}
+
+.products_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.product_card {
+    background: #CCC5B7;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product_card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #6F5D44;
+    font-weight: bold;
+}
+
+.product_card p {
+    font-size: 1rem;
+    color: #6F5D44;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.product_actions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.edit_product {
+    color: #FFFFFF;
+    background: #6F5D44;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.3rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit_product:hover {
+    background-color: #584a37;
+    color: #FFFFFF;
+}
+
+.delete_button {
+    background-color: #d33;
+    color: #FFFFFF;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete_button:hover {
+    background-color: #a00;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .products_section h2 {
+        font-size: 1.5rem;
+    }
+
+    .product_card {
+        padding: 0.75rem;
+    }
+
+    .product_card h3 {
+        font-size: 1.25rem;
+    }
+
+    .product_card p {
+        font-size: 0.9rem;
+    }
+
+    .delete_button {
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .products_grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    
+    .product_actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5rem;
+    }
+
+    .delete_button,
+    .edit_link {
+        text-align: center;
+    }
+}

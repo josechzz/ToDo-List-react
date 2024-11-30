@@ -1,0 +1,19 @@
+.google_button {
+  background-color: #ea4335;
+  color: white;
+}
+
+.google_button:hover {
+  background-color: #c12f25;
+}
+
+a {
+  color: #007bff;
+  font-weight: 600;
+  font-size: larger;
+}
+
+a:hover {
+  color: #584a37;
+}
+
