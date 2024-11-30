@@ -19,6 +19,7 @@ VITE_FIREBASE_APP_ID=
 ```
 
 # Deploy on Netlify
+https://todo-list-jose-chavez.netlify.app/
 
 - 
 
